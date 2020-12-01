@@ -1,0 +1,8 @@
+# prepros config files
+*.config
+
+# mac general
+.DS_Store
+
+# vs code
+.vscode
