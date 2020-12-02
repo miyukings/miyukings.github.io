@@ -51,19 +51,20 @@ h2.subheadline {
 }
 
 section.home.main h1 {
-  font-size: 3em;
+  font-size: clamp(.8em, 3vw, 2.5em);
   font-family: "cronos-pro", sans-serif;
   color: rgb(95, 67, 62);
   margin: 0;
 }
 
 section.home.main p {
-  font-size: 1.8em;
+  font-size: clamp(1em, 2vw, 1.5em);
   font-family: "cronos-pro", sans-serif;
   font-weight: 200;
   color: rgb(163, 129, 116);
   margin-left: auto;
   margin-right: auto;
+  margin: 1vh;
 }
 
 
@@ -278,17 +279,22 @@ img.shadow {
 
 /* HOME SECTION */
 section.home.main {
-  padding: 5% 1em;
+  padding: 35% 25%;
   text-align: center;
   background-image: url(../img/bracelet1600x1000.png); 
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: center;
+  min-width: 100vw;
+  min-height: 80vh;
+  display: grid;
+  place-items: center;
 }
 
 @media (max-width: 768px) {
   section.home.main {
-    width: 450px;
-    height: 350px;
+    /* width: 450px;
+    height: 350px; */
     /* margin-top: 80px; */
     margin-bottom: 0;
     background-size: 175%;
