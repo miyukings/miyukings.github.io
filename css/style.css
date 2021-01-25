@@ -13,7 +13,7 @@
 */
 
 body {
-  font-family: utopia-std, serif;
+  font-family: "utopia-std", serif;
   font-weight: 400;
   font-size: 87.5%; /* 14px */
   letter-spacing: 0.05em;
@@ -44,7 +44,7 @@ h1,h2,h3,h4,h5,h6 {
 
 
 h1.headline {
-  font-family: utopia-std, serif;
+  font-family: "utopia-std", serif;
   font-size: 3.5em;
 }
 h2.subheadline {
@@ -52,26 +52,25 @@ h2.subheadline {
 }
 
 section.home.main h1 {
-  font-size: clamp(.8em, 3vw, 2.5em);
+  font-size: 3vw;
   font-family: "cronos-pro", sans-serif;
   color: rgb(95, 67, 62);
   margin: 0;
 }
 
 section.home.main p {
-  font-size: clamp(1em, 2vw, 1.5em);
+  font-size: 1.8em;
   font-family: "cronos-pro", sans-serif;
   font-weight: 200;
   color: rgb(163, 129, 116);
   margin-left: auto;
   margin-right: auto;
-  margin: 1vh;
+  /* margin: 1vh 0; */
 }
 
 
-
 h2.section-head {
-  font-family: utopia-std, serif;
+  font-family: "utopia-std", serif;
   font-size: 2em;
   text-align: center;
   margin-top: 100px;
@@ -104,11 +103,6 @@ a.p-button {
 }
 
 /* LAYOUT */
-
-.container {
-  max-width: 1000px;
-  margin: 0 auto;
-}
 
 .container {
   max-width: 1000px;
@@ -280,43 +274,46 @@ img.shadow {
 
 /* HOME SECTION */
 section.home.main {
-  padding: 35% 25%;
+  padding: 5% 1em;
   text-align: center;
   background-image: url(../img/bracelet1600x1000.png); 
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center;
-  min-width: 100vw;
-  min-height: 80vh;
-  display: grid;
-  place-items: center;
+  /* background-position: center; */
 }
+
+/* .container.mini {
+  padding: 5%;
+} */
 
 @media (max-width: 768px) {
   section.home.main {
-    /* width: 450px;
-    height: 350px; */
-    /* margin-top: 80px; */
+    /* padding: 2% 10%;
+    margin-top: 0; */
+    width: 450px;
+    height: 350px;
+    /* margin-top: 80px;  */
     margin-bottom: 0;
     background-size: 175%;
     background-position: center;
-   
   }
-.container.mini {
-  margin-top:  110px;
-  padding-top: 0;
-  padding-bottom: 50px;
-   width: 450px;
- }
+
+  .container.mini {
+    margin-top:  110px;
+    padding-top: 0;
+    padding-bottom: 50px;
+     width: 450px;
+   }
 
 .container.mini h1 {
   font-size: 1em;
   margin: 0;
 }
-.container.mini {
+
+ .container.mini {
   font-size: .8em;
- 
-}}
+ }}
+
 
 .hero h1 {
   max-width: 13em;
@@ -336,18 +333,18 @@ section.home.main {
 
 /* MY PHOTOES */
 .a {
-  display:none;
+  display: none;
 }
 
 .b {
-  display:block;
+  display: block;
 }
 
 .hov:hover > .a {
-  display:block;
+  display: block;
 }
 .hov:hover > .b {
-  display:none;
+  display: none;
 }
 
 /* ANIMATIONS */
@@ -508,7 +505,9 @@ section {
 
 .subcontent-text h3 {
   font-size: 1.75em;
+  color: #5c4846;
 }
+
 
 .meta-text h3 {
   border-top: 1px solid rgba(0,0,0,.3);
